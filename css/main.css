@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Krona One', sans-serif;
+}
+
+nav {
+    position: fixed;
+    top:  30px;
+    color: #f1f1f1;
+    float: right;
+    padding: 10px;
+    right: 10px;
+    font-size: 14px;
+   
+}
+
+.navi {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 8px;
+    margin: 3px;
+     -webkit-box-shadow: 0px 0px 12px 1px rgba(0,0,0,1);
+-moz-box-shadow: 0px 0px 12px 1px rgba(0,0,0,1);
+    box-shadow: 0px 0px 12px 1px rgba(0,0,0,1);
+    
+}
+.navi:hover {
+    background-color: dimgray;
+    -webkit-box-shadow: 0px 0px 12px 1px rgba(0,0,0,1);
+-moz-box-shadow: 0px 0px 12px 1px rgba(0,0,0,1);
+    box-shadow: 0px 0px 12px 1px rgba(0,0,0,1);
+}
+
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    
+}
+
+.content {
+    position: fixed;
+    bottom: 300px;
+    background-image: url(../img/panorama-2117310_1920.jpg);
+    color: #f1f1f1;
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+#myBtn {
+    width: 100px;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 10px;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 26px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 20px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media screen and (min-width: 800px){
+    
+    .nav1{
+        display: none;
+    }
+    
+    nav {
+        display: block;
+   
+    }
+}
+
+@media screen and (max-width: 801px){
+    
+       .nav1{
+        display: block;
+          
+    }
+    
+    nav {
+        display: none;
+       
+    }
+}
